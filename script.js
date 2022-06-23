@@ -34,7 +34,7 @@ for(let i = 1; i <= 8; i++){
         body.append(tile);
         //ow.append(tile);
         //body.append(row);
-        //console.log(row)
+        //console.log(row)asd
         
     
         if(j % 2 === 0 && i % 2 === 0){
