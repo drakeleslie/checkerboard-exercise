@@ -33,8 +33,8 @@ for(let i = 1; i <= 8; i++){
 
         body.append(tile);
         //ow.append(tile);
-        //body.append(row);
-        //console.log(row)asd
+        //body.append(row);asd
+        //console.log(row)
         
     
         if(j % 2 === 0 && i % 2 === 0){
@@ -50,4 +50,4 @@ for(let i = 1; i <= 8; i++){
         }
     }
 }
-
+// finished product
