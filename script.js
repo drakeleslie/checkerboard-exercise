@@ -10,24 +10,19 @@ function checkerBoard(){
 const body = document.body;
 
 for(let i = 1; i <= 8; i++){
-    
-   // const row = document.createElement('div');
-    //row.append(tile)
-  //  body.append(row);
-
-//if(i % 2 === 0){
-   // tile.style.backgroundColor = 'black';
-//}else{
-    //tile.style.backgroundColor = 'red';
-//}
     for(let j = 1; j <= 8; j++){
     
+        //create random color
+        let random = Math.ceil(Math.random() * 255);
+        let random1 = Math.ceil(Math.random() * 255);
+        let random2 = Math.ceil(Math.random() * 255);
+        
         //const row = document.createElement('div');
         const tile = document.createElement('div');
         tile.style.float = 'left';
         tile.style.width = '12.5%';
         tile.style.paddingBottom = '12.5%';
-        
+        tile.style.backgroundColor = `rgb(${random},${random1}, ${random2})`
         //tile.style.borderBlockColor = "1px black"
         //const row = document.createElement('div');
 
@@ -37,15 +32,15 @@ for(let i = 1; i <= 8; i++){
         //console.log(row)
         
     
-        if(j % 2 === 0 && i % 2 === 0){
-            tile.style.backgroundColor = 'black';          
-        }else if(j % 2 === 0 && i % 2 === 1){
-            tile.style.backgroundColor = 'red';
-        }else if(j % 2 === 1 & i % 2 === 0){
-            tile.style.backgroundColor = 'red';
-        }else{
-            tile.style.backgroundColor = 'black';
-        }
+        // if(j % 2 === 0 && i % 2 === 0){
+        //     tile.style.backgroundColor = 'black';          
+        //  }else if(j % 2 === 0 && i % 2 === 1){
+        //     tile.style.backgroundColor = 'red';
+        // }else if(j % 2 === 1 & i % 2 === 0){
+        //     tile.style.backgroundColor = 'red';
+        // }else{
+        //     tile.style.backgroundColor = 'black';
+        // }
        
         }
     }
